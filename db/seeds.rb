@@ -49,5 +49,12 @@ end
 
 puts "9 portfolio items created"
 
+3.times do |technology|
+      Portfolio.last.technologies.create!(
+        name: "Technology #{technology}"
+    )
+end
+
+puts "3 technologies created"
 
 # The double quotation marks are required to do this type of string interpolation (It would not be dynamic if we use single quotation marks. e.g. it will print the contants as opposed to auto sequential numbering).
