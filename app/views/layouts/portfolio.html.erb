@@ -16,14 +16,11 @@
     <p class="alert"><%= alert %></p>
 
     <%= render "shared/nav", location: 'top' %>
+    <!-- navbar is at app/views/shared/_nav.html.erb -->
+    <!-- top was referenced at portfolio.scss and application.scss -->
 
-    <% if current_user.is_a?(User) %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-        <%= link_to "Register", new_user_registration_path %>
-        <%= link_to "Login", new_user_session_path %>
-    <% end %>
-
+    <%= login_helper %>
+    <!-- login helper is in application_helper.erb -->
 
     <%= yield %>
   </body>
