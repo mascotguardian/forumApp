@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,19 +15,42 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-    <%= login_helper %>
-    <!-- login helper is in application_helper.erb -->
+    <%= render 'shared/blog_nav'%>
 
-    <%= yield %>
+    <!-- Start of blog header -->
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">My Blog</h1>
+        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+      </div>
+    </div>
+    <!-- End of Blog Header -->
 
-    <%= render "shared/nav", location: 'bottom' %>
-    <!-- navbar is at app/views/shared/_nav.html.erb -->
-    <!-- bottom was referenced at blogs.scss -->
+    <!-- Start of container and row elements -->
+    <div class="container">
 
-    <%= source_helper("blog") %>
+      <div class="row">
+    <!-- End of container and row elements -->
+
+        <%= yield %>
+
+        <%= render 'shared/blog_sidebar' %>
+
+      </div>
+        <!-- start of footer -->
+        <footer class="blog-footer">
+          <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>
+            <a href="#">Back to top</a>
+          </p>
+        </footer>
+    <!-- end of footer -->
+
+        <%= source_helper("blog") %>
+      
+    </div>
 
   </body>
 </html>

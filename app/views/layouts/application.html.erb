@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,20 +14,24 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="site-wrapper">
 
-    <%= render "shared/nav", location: 'top' %>
-    <!-- navbar is at app/views/shared/_nav.html.erb -->
+      <div class="site-wrapper-inner">
 
-    <%= login_helper %>
-    <!-- login helper is in application_helper.erb -->
+        <div class="cover-container">    
 
-    <%= yield %>
+          <%= render "shared/application_nav" %>  
 
-    <%= @copyright %>
+          <%= yield %>
 
-    <%= source_helper("application") %>
+          <%= render "shared/application_footer" %>
+
+          <%= source_helper("application") %>
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 </html>

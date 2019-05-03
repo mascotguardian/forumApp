@@ -1,8 +1,7 @@
-<h1>Hi <%= current_user.first_name %></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>BlogPosts</h1>
-<%= @posts.inspect %>
-
-<h1>Skills</h1>
-<%= @skills.inspect %>
+<div class="inner cover">
+  <h1 class="cover-heading">Web Site development and 3D Animations</h1>
+  <p class="lead">Building functional and practical web sites and animated assets to help improve productivity and advertising appeal.</p>
+  <p class="lead">
+    <%= link_to "Learn More", about_me_path, class: "btn btn-lg btn-secondary" %>
+  </p>
+</div>
