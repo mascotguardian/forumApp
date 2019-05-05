@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,17 +14,12 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/nav", location: 'top' %>
-    <!-- navbar is at app/views/shared/_nav.html.erb -->
-    <!-- top was referenced at portfolio.scss and application.scss -->
-
-    <%= login_helper %>
-    <!-- login helper is in application_helper.erb -->
+    <%= render 'shared/portfolio_nav' %>
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
     <%= yield %>
+
+    <%= render 'shared/portfolio_footer' %>
 
     <%= source_helper("application") %>
 
