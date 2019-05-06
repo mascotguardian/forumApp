@@ -21,7 +21,15 @@
 
         <div class="cover-container">
 
-          <div id="background"></div>
+          <%= video_tag(
+              'WaspCinemagraph.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'wasp_image.png'
+            )
+            %>
 
           <%= render "shared/application_nav" %>  
 
