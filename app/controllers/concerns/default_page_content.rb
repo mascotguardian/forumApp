@@ -6,7 +6,7 @@ module DefaultPageContent
   end
 
   def set_page_defaults
-      @page_title = "Movie Forum"
+      @page_title = "Tech Blog"
       @seo_keywords = "Paul Maddison portfolio application"
   end
 end
