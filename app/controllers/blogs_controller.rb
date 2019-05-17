@@ -7,12 +7,15 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.page(params[:page]).per(5)
-    @page_title = "Movie Blogs"
+    @page_title = "Tech Blogs"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blog = Blog.includes(:comments).friendly.find(params[:id])
+    @comment = Comment.new
+
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
