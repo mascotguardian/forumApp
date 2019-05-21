@@ -1,7 +1,8 @@
-<div class="blog-header">
-  <div class="container">
-    <h1 class="blog-title">Blog Articles</h1>
-    <p class="lead blog-description">Feel free to log in and post comments about the articles</p>
+<section class="jumbotron text-center">
+<div class="container">
+    <h1 class="jumbotron-heading">Blog Articles</h1>
+    <p class="lead text-muted">Feel free to login and post a comment on an article.</p>
+    <p>
     <span>
       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
     </span>
@@ -10,3 +11,4 @@
     </span>
   </div>
 </div>
+</section>
