@@ -24,11 +24,11 @@ module ApplicationHelper
       },
       {
         url: about_me_path,
-        title: 'About Us'
+        title: 'What we do'
       },
       {
         url: contact_path,
-        title: 'Contact'
+        title: 'Resume'
       },
       {
         url: blogs_path,
