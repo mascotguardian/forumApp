@@ -19,26 +19,27 @@
   </head>
 
   <body>
+    <%= render 'shared/portfolio_nav' %>
+
     <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+      <div class="cover-container">
 
-          <%= render "shared/application_nav" %>  
-
+        <div class="row">
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
 
-          <%= alerts %>
-
-          <%= source_helper("application") %>
+          <%= render 'shared/application_sidebar' %>
         </div>
 
-      </div>
+        <%= render "shared/application_footer" %>
 
+        <%= alerts %>
+
+        <%= source_helper("application") %>
+          
+        </div>
     </div>
-
   </body>
 </html>

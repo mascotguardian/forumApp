@@ -28,7 +28,7 @@ module ApplicationHelper
       },
       {
         url: contact_path,
-        title: 'Resume'
+        title: 'Contact'
       },
       {
         url: blogs_path,
