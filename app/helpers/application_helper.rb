@@ -26,10 +26,10 @@ module ApplicationHelper
         url: about_me_path,
         title: 'What we do'
       },
-      {
-        url: contact_path,
-        title: 'Contact'
-      },
+      # {
+      #   url: contact_path,
+      #   title: 'Contact'
+      # },
       {
         url: blogs_path,
         title: 'Blog'
