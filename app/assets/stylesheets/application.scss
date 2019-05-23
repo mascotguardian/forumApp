@@ -103,6 +103,7 @@ h6, .h6 {
 .sidebar-module-inset {
   padding: 1rem;
   background-color: #BDBEC0;
+  color: #FFFF76;
   border-radius: .25rem;
 }
 .sidebar-module-inset p:last-child,
@@ -267,8 +268,6 @@ margin-top: 120px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://s3.us-east-2.amazonaws.com/pmaddison-portfolio-bucket/keyboard_n_hand.png');
-  /*background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('keyboard_n_hand.png'); */
-  /* background: image-url('keyboard_n_hand.png') no-repeat; */
   background-size: cover;
 }
 
@@ -287,6 +286,18 @@ margin-top: 120px;
 }
 
 .senmon {
-  color: #FEFAF6;
+  color: #8CFFD9;
+}
+
+.st-adv {
+  color: #E880D9;
+}
+
+.nd-adv {
+  color: #FF5733;
+}
+
+.rd-adv {
+  color: #8CFFD9;
 }
 
