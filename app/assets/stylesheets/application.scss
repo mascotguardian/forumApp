@@ -17,7 +17,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #fff;
+  color: rgba(240, 240, 240, 0.86);
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #FF5733;
   border: .05rem solid #fff;
@@ -32,10 +32,12 @@ html,
 body {
   height: 100%;
   font-family: 'Lato', sans-serif;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
+  /* background-color: #fff; */
 }
 body {
-  color: #FEFAF6;
+  /* color: #FEFAF6; */
+  color: #fff;
+  /* color: rgba(85, 85, 85, 0.86); */
   text-align: left;
   /* text-shadow: 0 .05rem .1rem rgba(0,0,0,.5); */
 }
@@ -46,7 +48,8 @@ h3, .h3
 h4, .h4
 h5, .h5
 h6, .h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Roboto Slab', serif; */
 }
 
 .jumbotron {
@@ -102,8 +105,9 @@ h6, .h6 {
 }
 .sidebar-module-inset {
   padding: 1rem;
-  background-color: #BDBEC0;
-  color: #FFFF76;
+  background-color: transparent;
+  color: rgba(202, 201, 203, 0.86);
+  /* color: rgba(85, 85, 85, 0.86); */
   border-radius: .25rem;
 }
 .sidebar-module-inset p:last-child,
@@ -268,6 +272,7 @@ margin-top: 120px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://s3.us-east-2.amazonaws.com/pmaddison-portfolio-bucket/keyboard_n_hand.png');
+  /* background: image-url('home_bg.png') no-repeat; */
   background-size: cover;
 }
 
@@ -286,18 +291,18 @@ margin-top: 120px;
 }
 
 .senmon {
-  color: #8CFFD9;
+  color: #007bff;
 }
 
 .st-adv {
-  color: #E880D9;
+  color: #007bff;
 }
 
 .nd-adv {
-  color: #FF5733;
+  color: #007bff;
 }
 
 .rd-adv {
-  color: #8CFFD9;
+  color: #007bff;
 }
 
