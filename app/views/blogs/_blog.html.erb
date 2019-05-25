@@ -5,7 +5,8 @@
   <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
 
   <p>
-    <%= truncate(markdown(blog.body), length: 800, escape: false) %>
+    <%= truncate(markdown(blog.body), length: 700, escape: false) %>
     <%= link_to "Continue reading", blog %>
   </p>
+
 </div>
