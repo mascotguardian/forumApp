@@ -24,7 +24,7 @@ module ApplicationHelper
       },
       {
         url: about_me_path,
-        title: 'What we do'
+        title: 'Video Portfolio'
       },
       # {
       #   url: contact_path,
