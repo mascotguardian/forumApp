@@ -1,0 +1,330 @@
+@import "bootstrap";
+@import "font-awesome";
+@import "gritter";
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  /* color: #4C7AF5; */
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: rgba(240, 240, 240, 0.86);
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #FF5733;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  /* background-color: #fff; */
+}
+body {
+  /* color: rgba(240, 240, 240, 0.93); */
+  color: rgba(85, 85, 85, 0.86);
+  text-align: left;
+  /* text-shadow: 0 .05rem .1rem rgba(0,0,0,.5); */
+}
+
+h1, .h1
+h2, .h2
+h3, .h3
+h4, .h4
+h5, .h5
+h6, .h6 {
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Roboto Slab', serif; */
+}
+
+.jumbotron {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1;
+  background-color: transparent;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /* -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5); */
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+/* sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 1rem;
+  /*margin: 0 -1rem 1rem;*/
+}
+.sidebar-module-inset {
+  padding: 1rem;
+  background-color: transparent;
+  /* color: rgba(202, 201, 203, 0.86); */
+  color: rgba(85, 85, 85, 0.86);
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: #ff944d;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    /* position: fixed; */
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 55rem;
+  }
+}
+
+/*
+ * Custom Styles
+ */
+
+.social-links li {
+background-color: transparent;
+font-size: 2.5em;
+}
+
+/*
+.card {
+margin-top: 120px;
+}
+*/
+
+.card-block {
+  color: #5c5252;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.auth-links a {
+  color: #5c5252;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.editreg > .card {
+  width: 34rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.app-nav span {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
+/* Reverted to a white Background */
+/*
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); */
+  
+  /* background: image-url('home_bg.png') no-repeat; */
+/*  background-size: cover;
+}
+*/
+
+
+.app-footer {
+  color: #6c757d;
+}
+
+.app-card-container {
+  color: #5c5252;
+  text-align: center;
+}
+
+.app-card-container > .card {
+  padding: 20px;
+}
+
+.senmon {
+  color: #007bff;
+}
+
+.st-adv {
+  color: #007bff;
+}
+
+.nd-adv {
+  color: #007bff;
+}
+
+.rd-adv {
+  color: #007bff;
+}
+
+.utube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.uvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

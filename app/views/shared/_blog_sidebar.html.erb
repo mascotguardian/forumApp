@@ -1,0 +1,37 @@
+<div class="col-sm-3 offset-sm-1 blog-sidebar">
+  <div class="sidebar-module sidebar-module-inset">
+    <h4>Firewalls</h4>
+    <p><h5>Talk to us about</h5>
+    <p>VPNs,
+      Content filters, 
+      Rogue APs, 
+      Multiple SSIDs, 
+      Traffic Shaping, 
+      Threat Protection, 
+      Content Filtering, 
+      Remote Managament, 
+      Your Website.</p>
+      <hr>
+
+  <h4>Date Rescue</h4>
+    <p><h5>Failed Hard Drive?</h5>
+    <p>Can't log into windows?
+      We recover information from non-encrypted disks.</p>
+  </div>
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
+  <div class="sidebar-module">
+    <h4>More content here:</h4>
+    <ol class="list-unstyled social-links">
+      <li><a href="https://www.youtube.com/watch?v=ikZc3RUp_Dc"><%= fa_icon "youtube" %></a></li>
+      <li><a href="https://github.com/mascotguardian/forumApp/pull/16"><%= fa_icon "github" %></a></li>
+      <li><a href="https://www.instagram.com/?hl=en"><%= fa_icon "instagram" %></a></li>
+    </ol>
+  </div>
+</div>
