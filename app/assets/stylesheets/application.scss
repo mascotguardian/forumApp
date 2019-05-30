@@ -35,7 +35,7 @@ body {
   /* background-color: #fff; */
 }
 body {
-  /* color: rgba(240, 240, 240, 0.93); */
+  color: rgba(240, 240, 240, 0.93);
   /* color: rgba(85, 85, 85, 0.86); */
   text-align: left;
   /* text-shadow: 0 .05rem .1rem rgba(0,0,0,.5); */
@@ -105,7 +105,7 @@ h6, .h6 {
 .sidebar-module-inset {
   padding: 1rem;
   background-color: transparent;
-  /* color: rgba(202, 201, 203, 0.86); */
+  color: rgba(202, 201, 203, 0.86);
   color: rgba(85, 85, 85, 0.86);
   border-radius: .25rem;
 }
@@ -279,8 +279,8 @@ margin-top: 120px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   
-background: image-url('keyboard_n_hand.png') no-repeat;
-background-size: cover;
+  background: image-url('keyboard_n_hand.png') no-repeat;
+  background-size: cover;
 }
 
 
