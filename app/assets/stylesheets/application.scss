@@ -106,7 +106,7 @@ h6, .h6 {
   padding: 1rem;
   background-color: transparent;
   color: rgba(202, 201, 203, 0.86);
-  color: rgba(85, 85, 85, 0.86);
+  /* color: rgba(85, 85, 85, 0.86); */
   border-radius: .25rem;
 }
 .sidebar-module-inset p:last-child,
@@ -279,7 +279,7 @@ margin-top: 120px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   
-  background: image-url('keyboard_n_hand.png') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('keyboard_n_hand.png') no-repeat;
   background-size: cover;
 }
 
