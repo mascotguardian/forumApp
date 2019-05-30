@@ -36,7 +36,7 @@ body {
 }
 body {
   /* color: rgba(240, 240, 240, 0.93); */
-  color: rgba(85, 85, 85, 0.86);
+  /* color: rgba(85, 85, 85, 0.86); */
   text-align: left;
   /* text-shadow: 0 .05rem .1rem rgba(0,0,0,.5); */
 }
@@ -266,7 +266,7 @@ margin-top: 120px;
 
 
 /* Reverted to a white Background */
-/*
+
 #background {
   position: fixed;
   top: 50%;
@@ -277,12 +277,12 @@ margin-top: 120px;
   height: auto;
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); */
+  transform: translateX(-50%) translateY(-50%);
   
-  /* background: image-url('home_bg.png') no-repeat; */
-/*  background-size: cover;
+background: image-url('keyboard_n_hand.png') no-repeat;
+background-size: cover;
 }
-*/
+
 
 
 .app-footer {
