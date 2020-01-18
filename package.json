@@ -1,5 +1,7 @@
 {
   "name": "forumApp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "heroku": "^7.35.1"
+  }
 }
